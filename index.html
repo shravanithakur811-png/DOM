@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Product Card</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="card">
+    <img id="carImage" src="assets/redCar.webp" alt="Mercedes Benz" style="width: 360; height: 300;">
+
+    <div class="content">
+        <span class="tag" id="carTag">CAR</span>
+        <h2>Mercedez Benz c300 2022</h2>
+
+        <div class="info">
+            <i class="fa-solid fa-car" style="color: black;"></i> Mileage: 4,000 miles <br>
+            <i class="fa-solid fa-gas-pump" style="color: black;"></i> Fuel: 25mpg <br>
+            <i class="fa-solid fa-shield" style="color: black;"></i> Safety: <span class="stars">★★★★★</span>
+        </div>
+
+        <p>Pick a color:</p>
+        <div class="colors">
+            <span class="color red" onclick="changeColor('red')"></span>
+            <span class="color gray" onclick="changeColor('gray')"></span>
+            <span class="color black" onclick="changeColor('black')"></span>
+        </div>
+
+        <div class="price">
+            ₹134,450 <span class="old-price">₹140,500</span>
+        </div>
+
+        <button id="cartBtn" class="btn"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
